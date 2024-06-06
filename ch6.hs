@@ -13,6 +13,7 @@ and''' xs = foldr (&&) True xs
 and'''' :: [Bool] -> Bool
 and'''' = foldr (&&) True
 
+concat' :: [[a]] -> [a]
 concat' [] = []
 concat' (xs:xss) = xs ++ concat' xss
 
